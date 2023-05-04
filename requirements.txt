@@ -1,1 +1,1 @@
-psycopg2
+PYSPARK_VERSION=3.2.0

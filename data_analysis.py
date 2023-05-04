@@ -92,6 +92,7 @@ if __name__ == '__main__':
         }
 
     # Write the DataFrame to the database
+    df_age.write.jdbc(url=url, table="max_min_avg_age", mode="overwrite", properties=properties)
     age_marital_y_percent.write.jdbc(url=url, table="age_marital_y_percent", mode="overwrite", properties=properties)
 
     age_marital_y_percent.show()

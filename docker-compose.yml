@@ -13,7 +13,7 @@ services:
       - pgadmin
 
     volumes:
-      - ./data_set:/app/data
+      - /home/arunherga/spark/data_set:/app/data
     
     command: python3 data_analysis.py
   
